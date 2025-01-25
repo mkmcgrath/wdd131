@@ -16,7 +16,11 @@ h1 {
 }
 
 h2 {
-    color: #006EB6;
+    color: #006EB6; /* the original blue color */
+}
+
+.dark h2 {
+    color: #0096C7; /* lighter blue for better conrtast */
 }
 
 main {
@@ -39,4 +43,9 @@ footer {
 
 img {
     width: 150px;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
 }

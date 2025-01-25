@@ -6,7 +6,12 @@
     <title>BYU-Idaho Mission Statement</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="light"> 
+    <select id="themeSelector">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+
     <header>
         <h1>MISSION STATEMENT</h1>
         <h2>BRIGHAM YOUNG UNIVERSITY-IDAHO</h2>
@@ -25,7 +30,9 @@
     </main>
 
     <footer>
-        <img src="byui-logo_blue.webp" alt="BYU Idaho Logo"> 
+        <img src="byui-logo_blue.webp" alt="BYU Idaho Logo" id="logo">
     </footer>
+
+    <script src="mission.js" defer></script>
 </body>
 </html>
