@@ -45,7 +45,8 @@ h1 {
 }
 
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-content: space-around;
   margin-top: 10px;
 }
@@ -61,9 +62,23 @@ h2 {
 }
 
 .gallery {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 figure {
@@ -71,11 +86,40 @@ figure {
 }
 
 footer {
-  background
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 15px;
+}
 
-/* media query for screen size */
-@media screen and (min-width: 700px) {
-  .gallery {
-    display: grid;
-  }
+.hide {
+  display: none;
+}
+
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  place-items: center;
+  z-index: 10;
+}
+
+.viewer img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.close-viewer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
 }
