@@ -25,3 +25,26 @@ const articles = [
     stars: '⭐⭐⭐⭐'
   }
 ]
+
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector(".book-review");
+  section.innerHTML = ""; // Clear existing hardcoded articles
+
+  articles.forEach(article => {
+    const articleElement = document.createElement("article");
+    articleElement.innerHTML = `
+      <div class="article-details">
+        <p class="date">${article.date}</p>
+        <p class="age">${article.ages}</p>
+        <p class="genre">${article.genre}</p>
+        <p class="rating">${article.stars}</p>
+      </div>
+      <div class="article-content">
+        <h2>${article.title}</h2>
+        <img src="${article.imgSrc}" alt="${article.imgAlt}">
+        <p>${article.description}</p>
+      </div>
+    `;
+    section.appendChild(articleElement);
+  });
+});
