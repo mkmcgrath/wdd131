@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let recipes = [];
 
   async function loadRecipes() {
-    const response = await fetch("recipes.csv");
+    const response = await fetch("./recipes.csv");
     const data = await response.text();
     const rows = data.split("\n").slice(1);
     recipes = rows.map(row => {
