@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ralph's Recipes</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Ralph's Recipes</h1>
+    <p>Quick & Delicious Meals for Everyone</p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" id="recipeSearch" placeholder="Search for recipes..." />
+      <button id="filterButton">Search</button>
+    </section>
+ <!-- Modal for expanded recipe view -->
+    <div id="recipeModal" class="modal hidden">
+      <div class="modal-content">
+        <span id="closeModal" class="close-button">&times;</span>
+        <div id="modalRecipeContent"></div>
+      </div>
+    </div>
+
+
+
+    <section id="recipeContainer" class="recipe-container">
+      <!-- Recipes will be inserted here dynamically -->
+    </section>
+  </main>
+
+   <script type="module" src="./scripts/script.js"></script>
+</body>
+</html>
+
