@@ -62,7 +62,7 @@ nav ul li a {
   cursor: pointer;
   transition: transform 0.2s ease;
   background-color: #FFD151;
-  width: 30%;
+  width: 90%;
 }
 
 
@@ -80,7 +80,7 @@ nav ul li a {
 
 .recipe-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 1rem;
   padding: 1rem;
 }
