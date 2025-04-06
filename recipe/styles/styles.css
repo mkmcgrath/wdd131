@@ -10,7 +10,7 @@ header {
     background: #E23;
     color: white;
     display: flex;
-    justify-content: flex-start; /* Align to the left */
+    justify-content: space-around; /* Align to the left */
     align-items: center;
     padding: 10px;
 }
