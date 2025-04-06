@@ -21,6 +21,7 @@ header h1 {
 
 nav {
     display: flex; /* Display nav items inline */
+
 }
 
 nav a {
