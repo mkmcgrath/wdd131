@@ -7,31 +7,31 @@ body {
 }
 
 header {
-    background: #E23;
+    background: #bd0b1a;
     color: white;
     display: flex;
-    justify-content: space-around; /* Align to the left */
+    justify-content: space-around; 
     align-items: center;
     padding: 10px;
 }
 
 header h1 {
-    margin-right: 20px; /* Add some space between title and nav */
+    margin-right: 20px;
 }
 
 nav {
-    display: flex; /* Display nav items inline */
+    display: flex; 
 
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-right: 15px; /* Add space between links */
+    margin-right: 15px; 
 }
 
 nav a:last-child {
-    margin-right: 0; /* Remove right margin from last link */
+    margin-right: 0;
 }
 
 .hero {
@@ -42,7 +42,7 @@ nav a:last-child {
 }
 
 .latest {
-    background: #A50104;
+    background: #bd0b1a;
     color: white;
     padding: 10px;
     margin: 20px;
