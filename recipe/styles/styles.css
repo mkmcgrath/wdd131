@@ -62,6 +62,7 @@ nav ul li a {
   cursor: pointer;
   transition: transform 0.2s ease;
   background-color: #FFD151;
+  width: 30%;
 }
 
 
